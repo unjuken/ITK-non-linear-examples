@@ -12,6 +12,7 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="FourierImage" targetName="MedianFilter" />
+      <config projectName="FourierImage" targetName="AdaptativeMedianFilter" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -41,22 +42,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="OCFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.AdaptativeMedianFilter">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdaptativeMedianFilter" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./archivos/09.nii ./archivos/09_new.nii 3" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FourierImage" TARGET_NAME="AdaptativeMedianFilter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FourierImage" RUN_TARGET_NAME="AdaptativeMedianFilter">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="MedianFilter" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./archivos/00.nii ./archivos/00_new.nii " REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FourierImage" TARGET_NAME="MedianFilter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FourierImage" RUN_TARGET_NAME="MedianFilter">
@@ -69,6 +79,10 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.AdaptativeMedianFilter" />
+      <item itemvalue="CMake Application.MedianFilter" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,10 +113,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616630631176">
+    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616637901986">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616630631176" />
+    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616637901986" />
     <state x="1582" y="163" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1616630607597">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -111,45 +125,60 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1455" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616628994928" />
-    <state width="2518" height="502" key="GridCell.Tab.0.bottom" timestamp="1616630913966">
+    <state x="1043" y="442" key="#xdebugger.evaluate" timestamp="1616637158636">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913966" />
-    <state width="2518" height="502" key="GridCell.Tab.0.center" timestamp="1616630913965">
+    <state x="1043" y="442" key="#xdebugger.evaluate/0.23.2560.1417@0.23.2560.1417" timestamp="1616637158636" />
+    <state width="2518" height="409" key="GridCell.Tab.0.bottom" timestamp="1616638264481">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913965" />
-    <state width="2518" height="502" key="GridCell.Tab.0.left" timestamp="1616630913965">
+    <state width="2518" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264481" />
+    <state width="2518" height="409" key="GridCell.Tab.0.center" timestamp="1616638264481">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913965" />
-    <state width="2518" height="502" key="GridCell.Tab.0.right" timestamp="1616630913966">
+    <state width="2518" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264481" />
+    <state width="2518" height="409" key="GridCell.Tab.0.left" timestamp="1616638264480">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913966" />
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1616630913968">
+    <state width="2518" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264480" />
+    <state width="2518" height="409" key="GridCell.Tab.0.right" timestamp="1616638264481">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913968" />
-    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1616630913967">
+    <state width="2518" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264481" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1616638264352">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913967" />
-    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1616630913967">
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264352" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1616638264351">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913967" />
-    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1616630913967">
+    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1616638264351">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616630913967" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1616638264351">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
     <state x="1226" y="370" key="SettingsEditor" timestamp="1616629142563">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1226" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1616629142563" />
+    <state x="1008" y="528" key="refactoring.ChangeSignatureDialog" timestamp="1616634596101">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1008" y="528" key="refactoring.ChangeSignatureDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616634596101" />
     <state x="1447" y="630" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1616628966762">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1447" y="630" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616628966762" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="it.GetIndex()" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
