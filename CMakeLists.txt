@@ -15,3 +15,6 @@ target_link_libraries(MedianFilter ${ITK_LIBRARIES})
 
 add_executable(AdaptativeMedianFilter AdaptativeMedianFilter.cxx)
 target_link_libraries(AdaptativeMedianFilter ${ITK_LIBRARIES})
+
+add_executable(AdaptativeWienerFilter AdaptativeWienerFilter.cxx)
+target_link_libraries(AdaptativeWienerFilter ${ITK_LIBRARIES})

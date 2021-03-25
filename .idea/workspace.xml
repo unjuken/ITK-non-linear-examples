@@ -13,6 +13,7 @@
     <generated>
       <config projectName="FourierImage" targetName="MedianFilter" />
       <config projectName="FourierImage" targetName="AdaptativeMedianFilter" />
+      <config projectName="FourierImage" targetName="AdaptativeWienerFilter" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -58,13 +59,18 @@
       <recent name="$PROJECT_DIR$/cmake-build-debug" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.AdaptativeMedianFilter">
+  <component name="RunManager" selected="CMake Application.AdaptativeWienerFilter">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="AdaptativeMedianFilter" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./archivos/09.nii ./archivos/09_new.nii 3" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FourierImage" TARGET_NAME="AdaptativeMedianFilter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FourierImage" RUN_TARGET_NAME="AdaptativeMedianFilter">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdaptativeWienerFilter" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./archivos/09.nii ./archivos/09_new.nii 1 100" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FourierImage" TARGET_NAME="AdaptativeWienerFilter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FourierImage" RUN_TARGET_NAME="AdaptativeWienerFilter">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -81,6 +87,7 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.AdaptativeMedianFilter" />
+      <item itemvalue="CMake Application.AdaptativeWienerFilter" />
       <item itemvalue="CMake Application.MedianFilter" />
     </list>
   </component>
@@ -113,10 +120,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616637901986">
+    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616643471973">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616637901986" />
+    <state x="1259" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616643471973" />
     <state x="1582" y="163" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1616630607597">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -129,38 +136,42 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1043" y="442" key="#xdebugger.evaluate/0.23.2560.1417@0.23.2560.1417" timestamp="1616637158636" />
-    <state width="2518" height="409" key="GridCell.Tab.0.bottom" timestamp="1616638438997">
+    <state width="396" height="466" key="DebuggerActiveHint" timestamp="1616643058392">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616638438997" />
-    <state width="2518" height="409" key="GridCell.Tab.0.center" timestamp="1616638438996">
+    <state width="396" height="466" key="DebuggerActiveHint/0.23.2560.1417@0.23.2560.1417" timestamp="1616643058392" />
+    <state width="2518" height="502" key="GridCell.Tab.0.bottom" timestamp="1616643261618">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616638438996" />
-    <state width="2518" height="409" key="GridCell.Tab.0.left" timestamp="1616638438996">
+    <state width="2518" height="502" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616643261618" />
+    <state width="2518" height="502" key="GridCell.Tab.0.center" timestamp="1616643261618">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616638438996" />
-    <state width="2518" height="409" key="GridCell.Tab.0.right" timestamp="1616638438997">
+    <state width="2518" height="502" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616643261618" />
+    <state width="2518" height="502" key="GridCell.Tab.0.left" timestamp="1616643261618">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616638438997" />
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1616638264352">
+    <state width="2518" height="502" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616643261618" />
+    <state width="2518" height="502" key="GridCell.Tab.0.right" timestamp="1616643261618">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264352" />
-    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1616638264351">
+    <state width="2518" height="502" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616643261618" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1616643264829">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
-    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1616638264351">
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1616643264829" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1616643264828">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
-    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1616638264351">
+    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1616643264828" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1616643264828">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616638264351" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1616643264828" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1616643264828">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1616643264828" />
     <state x="1226" y="370" key="SettingsEditor" timestamp="1616629142563">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -175,9 +186,19 @@
     <state x="1447" y="630" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1616628966762" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/AdaptativeWienerFilter.cxx</url>
+          <line>197</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="it.GetIndex()" language="ObjectiveC" />
+        <watch expression="pixelValues[4]" />
       </configuration>
     </watches-manager>
   </component>
